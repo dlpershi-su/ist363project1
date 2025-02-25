@@ -6,40 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-        background-color: black;
-        color: white;
-        font-family:'Courier New', Courier, monospace
-        }
-        
-        .u-text { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; 
-        }
-
-        .flex-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; 
-        }
-
-        .flex-text {
-        margin-right: 20px;
-        margin-left: 20px;
-        }
-
-        .social-icons i {
-    color: white;
-}
-    </style>
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
 <!-- header w/ nav (Yuntian) --> 
-<div>nav bar goes here</div>
-
-
-
-
+<div class="c-card nav" style="background-color: #000;">
+    <div class="o-grid ">
+        <div class="o-grid__cell ">
+            <h1 class="c-heading u-super">Italian Restaurant</h1>
+        </div>
+        <div class="o-grid__cell menu" style="gap: 10px; padding-left: 0;">
+            <button class="c-button c-button c-button--small u-large">Home</button>
+            <button class="c-button c-button c-button--small u-large">Menu</button>
+            <button class="c-button c-button c-button--small u-large">Locations</button>
+            <button class="c-button c-button c-button--small u-large">Reservation</button>
+            <button class="c-button c-button c-button--small u-large">Contact</button>
+        </div>
+    </div>
+</div>
+<hr>
 
 <!-- main image & text (Dara) -->
 <div class="flex-container">
@@ -52,17 +37,34 @@
     <img src="./main_dish.jpg" alt="Lasagna" width="50%">
 </div>
 
-
-
-
-
-
 <!-- Row w/ three images (Yuntian) -->
-<div>row of images goes here</div>
-
-
-
-
+<h1 class="c-heading u-centered u-super">Customer Preference</h1>
+<div class="o-grid o-grid--demo pic">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">
+        <img src="main.png" alt="Main" style="width: 100%; border-radius: 8px; object-fit: cover;">
+        <p class="u-centered u-large">Main</p>
+      </div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">
+        <img src="sides.png" alt="Sides" style="width: 100%; border-radius: 8px; object-fit: cover;">
+        <p class="u-centered u-large">Sides</p>
+      </div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">
+        <img src="pasta.png" alt="Pasta" style="width: 100%; border-radius: 8px; object-fit: cover;">
+        <p class="u-centered u-large">Pasta</p>
+      </div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">
+        <img src="drink.png" alt="Drinks" style="width: 100%; border-radius: 8px; object-fit: cover;">
+        <p class="u-centered u-large">Drinks</p>
+      </div>
+    </div>
+</div>
 
 <!-- footer (Dara) -->
 <footer class="u-centered">
